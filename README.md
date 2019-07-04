@@ -1,2 +1,3 @@
 # dcsherman.github.io
-a small, responsive portfolio website. CSS transitions and transforms pre-compiled with node-sass, pages structured in Flex and CSS Grids, 
+
+A small, responsive portfolio website. CSS transitions and transforms pre-compiled with node-sass. Pages structured in Flex and CSS Grids.
