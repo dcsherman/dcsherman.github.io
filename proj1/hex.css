@@ -7,7 +7,7 @@
 }
 
 :root {
-	--sansSerif: "Optane", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+	--sansSerif: "Optane", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif;
 	--Hex_N: 4;
 	--gap: 2vw;
 	--size: calc(calc(100vw / var(--Hex_N)) - var(--gap));
