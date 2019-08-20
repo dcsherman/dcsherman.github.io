@@ -15,23 +15,26 @@
 
 @media only screen and (min-width: 1100px) {
 	:root {--Hex_N: 6;}
-	}
+}
 	
 @media only screen and (max-width: 600px) {
 	:root {--Hex_N: 2;}
 	body {margin-right: calc(var(--size) * .3);}
 }
+
 html {
 	background: #e97;
 	box-sizing: border-box;
 	font-family: var(--sansSerif);
 	font-size: 1rem;
 }
+
 body {
 	padding-right: calc(var(--size) * .5);
 	overflow-X: hidden;
 	hyphens: auto;
 }
+
 section {
 	margin: calc(var(--size) * .5) auto 0;
 	width: calc(var(--size) * calc(var(--Hex_N) - 1));
@@ -39,6 +42,7 @@ section {
 	grid-template-columns: repeat(var(--Hex_N), 1fr);
 	grid-gap: var(--gap);
 }
+
 article {
 	background: darkolivegreen;
 	width: var(--size); 
@@ -49,9 +53,10 @@ article {
 	color: #fff;
 	overflow: hidden;
 }
+
 article:nth-child(2n) {
 	margin: calc(var(--size) * -.5) calc(var(--size) * -.25) 0 calc(var(--size) * -.75);
-	}
+}
 	
 article::before {
 	content: '';
@@ -61,6 +66,7 @@ article::before {
 	clip-path: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
 	shape-outside: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
 }
+
 img {
   width: var(--size);
 	height: var(--size);
@@ -74,11 +80,15 @@ img {
 	clip-path: inherit;
 	z-index:  10;
 }
-article:hover img {transform: translate(-50%, -50%) rotate(-110deg);}
+article:hover img {
+	transform: translate(-50%, -50%) rotate(-110deg);
+}
+
 h2 {
 	font-size: 100%;
 	line-height: 1.2em;
 }
+
 figure {
 	display: flex;
 	flex-direction: column;
@@ -90,13 +100,15 @@ figure {
 	line-height: 1;
 	color: #fff;
 	transition: .75s .05s;
-  text-align: center;
+	text-align: center;
 }
+
 figure p {
 	font-size: 70%;
 	line-height: 1.2;
 	width: 100%;
 }
+
 h1 {
 	width: 100vw;
 	background: #f30;
@@ -109,6 +121,7 @@ h1 {
 	font-weight: 400;
 	color: #fff;
 }
+
 body > p {
 	font-size: 1.5rem;
 	margin: 2rem 0 1rem calc(var(--size) * .5);
