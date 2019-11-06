@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+*{
+	box-sizing: border-box;
+}
+:root{
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+option { 
+    
+   color: black;
+}
+body{
+
+	background: url(http://images.freeimages.com/images/previews/694/pakistani-restaurant-1156602.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: bottom;
+	display: grid;
+	grid-template-rows: 3% 90%;
+	align-items:center;
+	justify-items: center;	
+	font-family: 'Questrial', sans-serif;
+	color: white;
+}
+
+#title{
+	margin-top: 2rem;
+	color: #131;
+}
+	
+#description{
+	margin:.15rem auto;
+	padding: 0;
+	font-size: 1.5rem;
+}
+
+#form-outer{
+	padding: .5rem 0;
+	background: rgba(13,13,13,.8);
+	margin-top: 2%;
+	width: 90%;
+	text-align: center;		
+	border: .025rem solid white;
+	border-radius: .75rem
+}
+
+form{
+	
+	padding: .5rem 0;
+	height:100%;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	width:95%;
+		margin: 0 auto;
+}
+.container{
+	
+	
+	width: 95%;
+	height:100%;
+	display:grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.label{
+
+}
+.radio-main-container{
+	width: 100%;	
+	display: flex;
+	justify-content: space-between;
+}
+
+.radio-container{
+	width: 30%;
+
+	display: grid;
+	font-size:.8rem; 
+	
+	
+		border: .1rem solid white;
+	border-radius: .75rem;
+	margin-bottom: 1%;
+	background: rgba(255, 255, 255, .025)
+}
+.radio-button-container{
+	-webkit-text-fill-color: red;
+	display: grid;
+	font-size: .70rem;
+	justify-items: end;
+	letter-spacing: -1px;
+}
+
+.input-field, #dropdown, #date{
+	width: 95%;
+	margin-bottom: .25rem;
+	background: rgba(255,255,255,.25);
+	color: white;
+	border-radius: .25rem;
+}
+.checkbox-main-container{
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: end;
+	
+	
+}
+.checkbox-container{	
+	display: grid;
+	
+ 	
+	align-items: center;
+	justify-items: end;
+	margin-bottom: .5rem;
+	font-size:.75rem; 
+}
+.final{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-primary{
+	width: 5rem;
+	
+}
+
+
+#success_message, #error_message{
+	color:black;
+	padding-top: 2rem;
+	width:100%; height:25%;
+}
+
+/*===================MEDIA==========*/
+@media (min-width: 800px){
+	#form-outer{	
+	width: 60%;		
+	}
+	.radio-button-container{
+	
+	font-size: 1rem;
+	justify-items: end;
+	letter-spacing: 2px;
+}
+	.checkbox-main-container{
+	width: 100%;	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+	}
+	.input-field, #dropdown, #date{
+	width: 85%;
+	margin-bottom: .3rem;
+}
+	.final{
+	flex-direction: row;	
+	justify-content:flex-start;
+	}
+	
+	.button-primary{
+	width: 5rem;
+	margin-left: 4.5rem;
+}
+	
+}/*==============END MEDIA================*/

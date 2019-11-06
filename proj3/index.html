@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta charset="utf-8">
+    <title>Restaurant Survey</title>
+</head>
+
+<body>
+	<h1 id="title">Your Opinion Matters!</h1>
+	<div id="form-outer">
+		<p id="description">Tell us about your visit</p>	
+		
+		<form action="post" id="survey-form">
+		
+			<div class="container"><!--NAME======-->
+				<label class="label" id="name-label" for="name" >Name</label>
+				
+                 <input autofocus id="name" type="text" name="Name" required maxlength="50" class="input-field" placeholder="Please enter your name" >
+			</div><!--END NAME-->
+<!--Email======-->			
+			<div class="container">
+				<label class="label" id="email-label" for="email" >Email</label>
+				<input id="email" type="email" name="Email" required maxlength="50" class="input-field" placeholder="Please enter your email" >				
+			</div>
+			<!--END Email-->			
+<!--AGE======-->			
+			<div class="container">
+				<label class="label" id="number-label" for="times" >How many times have you visited us?</label>
+				<input type="number" name="times" id="number"  class="input-field" min="1" max="115" placeholder="Enter a number">
+			</div>
+			<!--END AGE-->
+<!--PHONE======-->            
+            <div class="container">
+				<label class="label" id="phone-label" for="phone" >Phone</label>
+                <input type="tel" name="phone" id="phone" class="input-field" placeholder="Phone #" >				
+			</div>
+			<!--END PHONE-->
+			
+<!--DROP DOWN======-->			
+			<div class="container">
+				<label class="label" id="dropdown-label" for="dropdown" >Which location did you visit?</label>
+                <select name="dropdown" id="dropdown" > 
+                    <option disabled>Please select a location</option>
+                    <option value="one">Semley Cliffs</option>
+                    <option value="two">Madrone Landing</option>
+                    <option value="three">Virgo Bay</option>
+                    <option value="four">Rowantree Heights</option>
+                </select>				
+			</div>
+			<!--END DROP DOWN-->
+<!--DATE======-->			
+				<div class="container">
+				<label class="label" id="date-label" for="date" >When did you visit us?</label>
+				
+                 <input type="date" name="date" id="date" class="input-field" min="2000-01-02">
+			</div><!--END DATE-->			
+			
+<!--RATE=====-->			
+			<div class="container">
+			<label class="rate">Rate your experience</label>
+				<div class="radio-main-container"><!--RADIO MAIN=====-->
+	<!--RADIO 1=====-->						
+					<div class="radio-container">
+						<label class="label" id="radio-label" for="food" >Food</label>
+							<div class="radio-button-container">
+						   
+							    <label >&#9733;<input type="radio" name="food" value="1" > </label>
+								<label >&#9733;&nbsp;&#9733;<input type="radio" name="food" value="2" > </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="food" value="3" > </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="food" value="4"> </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="food" value="5"> </label>
+							</div>
+					</div><!--END RADIO 1-->
+	<!--RADIO 2=====-->					
+					<div class="radio-container">
+						<label class="label" id="radio-label-2" for="service" >Service</label>
+							<div class="radio-button-container">
+						   
+							    <label >&#9733;<input type="radio" name="service" value="1" > </label>
+								<label >&#9733;&nbsp;&#9733;<input type="radio" name="service" value="2" > </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="service" value="3" > </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="service" value="4"> </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="service" value="5"> </label>
+							</div>
+					</div><!--END RADIO 2-->
+	<!--RADIO 3=====-->					
+					<div class="radio-container">
+						<label class="label" id="radio-label-3" for="atmosphere" >Atmosphere</label>
+							<div class="radio-button-container">
+						   
+							    <label >&#9733;<input type="radio" name="atmosphere" value="1" > </label>
+								<label >&#9733;&nbsp;&#9733;<input type="radio" name="atmosphere" value="2" > </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="atmosphere" value="3" > </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="atmosphere" value="4"> </label>
+								<label>&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;&nbsp;&#9733;<input type="radio" name="atmosphere" value="5"> </label>
+							</div>
+					</div><!--END RADIO 3-->
+				
+
+				
+					</div>	<!--END RADIO MAIN-->
+				</div><!--END RATE-->
+			
+<!--CHECK BOX======-->			
+			<div class="container">
+				<label class="label" id="checkbox-label" for="checkbox" >What have you tried?</label>
+				<div class="checkbox-main-container">
+                  
+                  	<div class="checkbox-container" id="checkbox-container-1">
+                   		<label >Fettuccine Alfredo<input type="checkbox" name="checkbox" value="fettuccine" > </label>
+                     	<label>Spinach Manicotti<input type="checkbox" name="checkbox" value="manicotti" > </label>                   
+                      	<label >Spaghetti Marinara<input type="checkbox" name="checkbox" value="sphagetti" > </label> 
+                   
+                     </div>
+                    
+                    <div class="checkbox-container" id="checkbox-container-2">
+                     <label >Chicken Parm Sandwich<input type="checkbox" name="checkbox" value="chicken sandwich" > </label>
+                    <label>Philly Cheesesteak<input type="checkbox" name="checkbox" value="steak sandwich" > </label>
+                     <label >Calzone<input type="checkbox" name="checkbox" value="cheese sandwich" > </label>                  
+                     </div>
+                    
+                    <div class="checkbox-container" id="checkbox-container-3">
+                    	<label>New York Cheesecake<input type="checkbox" name="checkbox" value="cheesecake" > </label>
+                     	 <label >Cannoli<input type="checkbox" name="checkbox" value="cannoli" > </label>             		 <label >Tiramisu<input type="checkbox" name="checkbox" value="tiramisu" > </label>
+                     </div>
+                     
+                </div>
+			</div>
+<!--TEXT BOX======-->
+			<div class="container">
+			<label class="label" for="message">In your own words:</label>
+            <textarea id="message" name="Message" class="input-field" rows="5" maxlength="6000" required placeholder= "Complete this survey for a free appetizer coupon via SMS"></textarea>
+							
+			</div>
+          
+<!--====SUBMIT======-->
+			<div class="container final">
+				<button class="button-primary" id="submit" type="submit">Submit</button>			
+			</div>
+			
+		</form>
+		<!--====END FORM=====-->
+        
+ 				
+        
+	</div>
+<!--====END FORM OUTER=====-->	
+	
+ <div id="success_message" style=" display:none;">
+                    <h3>Submitted the form successfully!</h3> 
+                    <p> We will get back to you soon. </p>
+                    <a href="index.html">Back</a>
+                </div>
+                
+                <div id="error_message" style=" display:none; "> <h3>Error</h3> Sorry there was an error sending your form.
+                 <a href="index.html">Back</a> </div>
+</body>
+</html>
