@@ -36,20 +36,18 @@ I have over 10 years of job experience in application development, web architect
 
 
 
----
-
-
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
 
----
 <!-- - 🔭 I’m currently working on ...
 
 - 🌱 I’m currently learning ...
 -->
 
 - 📫 How to reach me: ...
+
+
 Email: <a href="mailto:d.c.sherman@gmail.com">D.C.Sherman@gmail.com
 
 Phone: <a href="tel://">+803 857 1043
