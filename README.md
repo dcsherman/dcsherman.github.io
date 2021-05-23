@@ -51,7 +51,9 @@ I have over 10 years of job experience in application development, web architect
 
 - 📫 How to reach me: ...
 Email: <a href="mailto:d.c.sherman@gmail.com">D.C.Sherman@gmail.com
+
 Phone: <a href="tel://">+803 857 1043
+
 Address: P.O. 1017, Holly Hill, SC 29059
 
 
