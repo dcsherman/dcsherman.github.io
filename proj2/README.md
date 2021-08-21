@@ -1,53 +1,57 @@
-goodreads-api
-=============
+# React Projects
 
-A quick PHP wrapper class for the GoodReads API.
+A couple of projects to get familiar with the React framework.
 
-Disclaimer
-----------
-This is something I hacked together quickly, it isn't beautiful, and can only access a few API endpoints. However it's a good starting point, and from a cursory glance implementing other methods wouldn't be particularly tricky. Caching support is also baked in.
+![Giphy](https://media.giphy.com/media/l0HUhhAtb86vYAHkY/giphy.gif)
+![Giphy](https://media.giphy.com/media/26gN147Cy7zF1Mv7y/giphy.gif)
+![Giphy](https://media.giphy.com/media/26DNeo2xDmfj3plbW/giphy.gif)
 
-Please also bear in mind the GoodReads API itself isn't great (some methods for example only support XML!), you can read/comment on that in their forums.
 
-Requirements
-------------
-* PHP 5.3.x or higher
-* cURL
-* GoodReads API key
+## Projects
+1. **todo**: Basic todo app to get started.
+2. **tictactoe**: A tic-tac-toe game uses states and props.
+3. **markdown-editor**: A real-time markdown editor SPA. [(Live Demo)](https://react-markdown-editor.firebaseapp.com)
+4. **basic-react-redux**: Basic react-redux project which handles articles in its store.
+5. **basic-redux-thunk**: Basic react-redux-thunk project which handles items from an API using thunk, uses redux for store.
+6. **book-store [WIP]**: Online book store built over react-redux and Bootstrap for UI.
+7. **trip-mate**: Manage and keep track of your trips with this simple, smooth webapp. Uses react-router, custom styling. [(Live Demo)](https://react-trip-mate.firebaseapp.com)
+8. **property-finder**: Search for and list properties. Built on React-Native, uses react-navigation.
+9. **todo-pwa**: The classic Todos Tracker as a Progressive Web App. Built using React, Redux, leveraging styled-components, PaperCSS, Service Worker tools. Data is retained using localStorage [(Live Demo)](https://paper-todo.firebaseapp.com)
+10. **gatsbyjs-markdown-blog**: GatsbyJS blog which fetches markdown blog posts, lists them and displays each post wrapped up as a static site. Based on the tutorials in the official docs, uses GraphQL, Typography.js, Remark plugin, Glamor.
+11. **reddit-clone**: react-redux-thunk project that calls the RedditAPI to fetch posts from selected subreddits. [(Live Demo)](https://github.com/ajayns/frontend-dev-talk)
 
-Available methods
------------------
-* [author.show](https://www.goodreads.com/api#author.show)
-* [author.books](https://www.goodreads.com/api#author.books)
-* [book.show](https://www.goodreads.com/api#book.show)
-* [book.show_by_isbn](https://www.goodreads.com/api#book.show_by_isbn)
-* [book.title](https://www.goodreads.com/api#book.title)
-* [reviews.list](https://www.goodreads.com/api#reviews.list)
-* [review.show](https://www.goodreads.com/api#review.show)
-* [user.show](https://www.goodreads.com/api#user.show)
 
-Usage
------
-1. Include class
-2. Initialise wrapper `$api = new GoodReads('PUT YOUR API KEY HERE', 'writable directory for caching');`
-3. Call a method `$data = $api->getLatestReads(4148474);`
+## Development
 
-License
--------
-Simplified BSD (included).
+Projects such as _create-react-app_, _nwb_ and _react-slingshot_ have been used to setup development envs.
 
-Changes
--------
-2018-06-02 [Tyler Paulson](https://github.com/tyler-paulson)
-* Added function to get a user by username rather than ID.
+Install all the required packages/dependencies using yarn
 
-2018-03-04 [Tyler Paulson](https://github.com/tyler-paulson)
-* Added function to get all of a user's books, read or otherwise.
+### `yarn`
 
-2017-12-10 [Daniel G Wood](https://github.com/danielgwood)
-* Added 5 endpoints: author.books, book.show, book.show_by_isbn, book.title and review.show
-* Updated documentation.
+Serve the app to browser
 
-2016-05-13 [Victor Davis](https://github.com/victordavis/goodreads-api)
-* Added LIBXML_NOCDATA arg to simplexml_load_string to capture CDATA in returned XML
-* Added 2 endpoints: author.show & user.show
+### `yarn start`
+
+
+## Tutorials/References
+
+https://reactjs.org/tutorial/tutorial.html
+
+https://egghead.io/courses/the-beginner-s-guide-to-reactjs
+
+https://www.valentinog.com/blog/react-redux-tutorial-beginners/
+
+https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3
+
+https://www.raywenderlich.com/178012/react-native-tutorial-building-android-apps-javascript
+
+https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-using-mocks-48ca0f47f9a
+
+https://www.gatsbyjs.org/tutorial/part-four/
+
+https://redux.js.org/advanced/example-reddit-api
+
+## Contributing
+
+Feel free to open issues and pull requests!
