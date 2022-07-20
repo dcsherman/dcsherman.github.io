@@ -1,0 +1,7 @@
+Collect suitable jobs.
+
+SEARCH for phone numbers of each company. Place in [c:\docs\JoshsGambit contacts.txt]
+
+Call each number, run Josh's gambit, with the aim of getting direct e-mail for the hirers of each job. 
+
+Send resume, cover letter to each hirer.

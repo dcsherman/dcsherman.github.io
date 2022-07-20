@@ -1,0 +1,35 @@
+
+/*
+
+CREATE TABLE Pet (
+petID SERIAL,
+petName VARCHAR(25) NOT NULL,
+petType VARCHAR(15) NOT NULL,
+petDescription VARCHAR(255) NOT NULL,
+price DECIMAL(9,2) NULL,
+pix VARCHAR(15) DEFAULT “missing.jpg”,
+)
+
+*/
+
+CREATE DATABASE JoshsGambit
+
+
+CREATE TABLE job (
+jobID
+companyName
+jobTitle
+jobProvenance
+
+CREATE TABLE company (
+companyID
+companyName
+compsnyPhone
+primaryContact
+
+CREATE TABLE contact (
+companyName
+hirerName
+hirerEmail
+
+
