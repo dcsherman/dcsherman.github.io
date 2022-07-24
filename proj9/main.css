@@ -1,8 +1,10 @@
 * {
-	font: Calibri, sans-serif
+	font-family: Calibri, sans-serif;
+	font-size: 14pt
 }
 
-p banner {
-	text-color: red;
-	background-color: yellow;
+h1 {
+	color: orange;
+	font-family: "Devroye Unicode";
+	background-color: blue;
 }
