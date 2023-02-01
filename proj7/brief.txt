@@ -1,0 +1,5 @@
+new logo.png, 308 x 114. Text to read "LOMICK-JEFFERIES PHOTOGRAPHY"
+
+c:\docs\E-books\PDF\Hamm- Wireframing Essentials (2014)
+
+Code completed as of 22JAN23. Push live to /dcsherman.github.io/proj7. Ask Kimmy for her changes, then host on a separate domain: {ljp.com}
